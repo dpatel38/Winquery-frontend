@@ -1,0 +1,49 @@
+.subBtn{
+    display: inline-block;
+        border-radius: 12px;
+        background-color: #400227;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      position: sticky;
+      
+}
+
+
+.subBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .subBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    
+  }
+  
+  .subBtn:hover span {
+    padding-right: 25px;
+    
+    
+  }
+  
+  .subBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .subBtn:hover::after {
+    background-color: #400227;
+  }

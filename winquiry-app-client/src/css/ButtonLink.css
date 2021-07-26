@@ -1,0 +1,64 @@
+/* Nav buttons */
+.navButton {
+    display: inline-block;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: sticky;
+    border-radius: 12px;
+    background: linear-gradient(-45deg, #400227 , #CE1358, #400227 , #CE1358 );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  .navButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    margin-bottom: -10px;
+  }
+  
+  .navButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .navButton:hover span {
+    padding-right: 25px;
+  }
+  
+  .navButton:hover span:after {
+    opacity: 1;
+    right: 0;
+    
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+    
+}
+.login-form-button, .login-form-button:hover, .login-form-button:focus {
+    background-color: #400227;
+    border-color: #400227;
+  }

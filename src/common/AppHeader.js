@@ -77,8 +77,9 @@ class AppHeader extends Component {
             <Header className="app-header">
             <div className="container">
               <div className="app-title" >
+
                 {/* Wintor logo */}
-                <Link to="/"><img className='logo' src={winquirylogo} alt="Winquiry Logo" /></Link>
+                <img className='logo' src={winquirylogo} alt="Winquiry Logo" />
               </div>
               <Menu
                 className="app-menu"

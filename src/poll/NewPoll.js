@@ -173,7 +173,7 @@ class NewPoll extends Component {
 
         return (
             <div className="new-poll-container">
-                <h1 className="page-title">Create Poll</h1>
+                <h1 className="page-title">Create Winquiry</h1>
                 <div className="new-poll-content">
                     <Form onSubmit={this.handleSubmit} className="create-poll-form">
                         <FormItem validateStatus={this.state.question.validateStatus}
@@ -232,7 +232,7 @@ class NewPoll extends Component {
                                 htmlType="submit" 
                                 size="large" 
                                 disabled={this.isFormInvalid()}
-                                className="create-poll-form-button">Create Poll</Button>
+                                className="create-poll-form-button">Save Winquiry</Button>
                         </FormItem>
                     </Form>
                 </div>    

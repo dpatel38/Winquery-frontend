@@ -122,7 +122,7 @@ class PollList extends Component {
         if(!this.props.isAuthenticated) {
             this.props.history.push("/login");
             notification.info({
-                message: 'Polling App',
+                message: 'Winquiry App',
                 description: "Please login to vote.",          
             });
             return;
@@ -148,7 +148,7 @@ class PollList extends Component {
                 this.props.handleLogout('/login', 'error', 'You have been logged out. Please login to vote');    
             } else {
                 notification.error({
-                    message: 'Polling App',
+                    message: 'Winquiry App',
                     description: error.message || 'Sorry! Something went wrong. Please try again!'
                 });                
             }
@@ -162,8 +162,8 @@ class PollList extends Component {
         .then(res => {
             console.log(res);
             notification.success({
-                message: 'Polling App',
-                description: "Poll deleted!",          
+                message: 'Winquiry App',
+                description: "Winquiry deleted!",          
             });
 
             // console.log(this.state);
@@ -177,7 +177,7 @@ class PollList extends Component {
         }).catch(err => {
             console.log(err);
             notification.error({
-                message: 'Polling App',
+                message: 'Winquiry App',
                 description: "An error occurred!",          
             });
             // this.loadPollList();
@@ -210,7 +210,7 @@ class PollList extends Component {
                 {
                     !this.state.isLoading && this.state.polls.length === 0 ? (
                         <div className="no-polls-found">
-                            <span>No Polls Found.</span>
+                            <span>No Winquiry Found.</span>
                         </div>    
                     ): null
                 }  

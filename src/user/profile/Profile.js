@@ -100,7 +100,7 @@ class Profile extends Component {
                                     tabBarStyle={tabBarStyle}
                                     size="large"
                                     className="profile-tabs">
-                                    <TabPane tab={`${this.state.user.pollCount} Polls`} key="1">
+                                    <TabPane tab={`${this.state.user.pollCount} Winquiries`} key="1">
                                         <PollList username={this.props.match.params.username} type="USER_CREATED_POLLS" />
                                     </TabPane>
                                     <TabPane tab={`${this.state.user.voteCount} Votes`}  key="2">
